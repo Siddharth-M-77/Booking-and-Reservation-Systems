@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelNow - Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom hover effect */
+    .gallery-item:hover .overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+  
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-6 shadow-lg">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">TravelNow</h1>
+      <nav>
+        <a href="index.html" class="px-4 hover:text-yellow-400">Home</a>
+        <a href="about.html" class="px-4 hover:text-yellow-400">About</a>
+        <a href="booking.html" class="px-4 hover:text-yellow-400">Book Now</a>
+        <a href="gallery.html" class="px-4 hover:text-yellow-400">Gallery</a>
+        <a href="contact.html" class="px-4 hover:text-yellow-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <main class="container mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Travel Gallery</h2>
+    <p class="text-center text-gray-600 mb-12">Explore some of our top destinations captured by our travelers and photographers.</p>
+    
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Gallery Item 1 -->
+      <div class="relative gallery-item overflow-hidden rounded-lg shadow-lg">
+        <img src="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fFBhcmlzfGVufDB8fHx8MTY2Mzc4NzEyNw&ixlib=rb-1.2.1&q=80&w=400" alt="Paris, France" class="w-full h-64 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+          <span class="text-white font-bold">Paris, France</span>
+        </div>
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="relative gallery-item overflow-hidden rounded-lg shadow-lg">
+        <img src="https://images.unsplash.com/photo-1542831371-d531d36971e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fE5ldyUyMFlvcmt8ZW58MHx8fHwxNjYzNzg3MTI3&ixlib=rb-1.2.1&q=80&w=400" alt="New York, USA" class="w-full h-64 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+          <span class="text-white font-bold">New York, USA</span>
+        </div>
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="relative gallery-item overflow-hidden rounded-lg shadow-lg">
+        <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fFRva3lvfGVufDB8fHx8MTY2Mzc4NzEyNw&ixlib=rb-1.2.1&q=80&w=400" alt="Tokyo, Japan" class="w-full h-64 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+          <span class="text-white font-bold">Tokyo, Japan</span>
+        </div>
+      </div>
+
+      <!-- Gallery Item 4 -->
+      <div class="relative gallery-item overflow-hidden rounded-lg shadow-lg">
+        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fFN5ZG5leXxlbnwwfHx8fDE2NjM3ODcxMjc&ixlib=rb-1.2.1&q=80&w=400" alt="Sydney, Australia" class="w-full h-64 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+          <span class="text-white font-bold">Sydney, Australia</span>
+        </div>
+      </div>
+
+      <!-- Additional Gallery Items -->
+      <div class="relative gallery-item overflow-hidden rounded-lg shadow-lg">
+        <img src="https://www.roadaffair.com/wp-content/uploads/2017/10/cape-town-south-africa-shutterstock_92510755.jpg" alt="Cape Town, South Africa" class="w-full h-64 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+          <span class="text-white font-bold">Cape Town, South Africa</span>
+        </div>
+      </div>
+
+      <div class="relative gallery-item overflow-hidden rounded-lg shadow-lg">
+        <img src="http://www.wallpaperbetter.com/wallpaper/72/180/848/united-arab-emirates-skyscrapers-dubai-2K-wallpaper.jpg" alt="Dubai, UAE" class="w-full h-64 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+          <span class="text-white font-bold">Dubai, UAE</span>
+        </div>
+      </div>
+
+      <div class="relative gallery-item overflow-hidden rounded-lg shadow-lg">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fFJvbWUlMjBJdGFseXxlbnwwfHx8fDE2NjM3ODcxMjc&ixlib=rb-1.2.1&q=80&w=400" alt="Rome, Italy" class="w-full h-64 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+          <span class="text-white font-bold">Rome, Italy</span>
+        </div>
+      </div>
+
+      <div class="relative gallery-item overflow-hidden rounded-lg shadow-lg">
+        <img src="https://awayandfar.com/wp-content/uploads/2019/01/Waianapanapa-State-Park.jpg" alt="Maui, Hawaii" class="w-full h-64 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+          <span class="text-white font-bold">Maui, Hawaii</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
